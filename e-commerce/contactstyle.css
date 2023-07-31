@@ -7,9 +7,11 @@ html,body{
     font-family: 'Dosis', sans-serif;
     width: 100%;
     height: 100%;
-    background-color: #df9957;
+    background-color: #fffcf9;
+    
 }
 .contact{
+    background-color: #FAE4CF;
     max-width: 1400px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);

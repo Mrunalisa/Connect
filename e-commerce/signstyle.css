@@ -1,6 +1,6 @@
 body {
   font-family: 'Dosis', sans-serif;
-    background-color:  #df9957;
+  background-color: #fffcf9;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +10,7 @@ body {
   
   .container {
     width: 1400px;
-    background-color: #fff;
+    background-color:#FAE4CF;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 30px;
     border-radius: 8px;
