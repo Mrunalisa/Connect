@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: 'Dosis', sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color:#df9957;
+}
+.about{
+    max-width: 1400px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #FAE4CF;;
+}
+
+.about-info{
+    width: 60%;
+    padding: 10px;
+    text-align: justify; 
+    background-color:#ffffff; 
+}
+.about-img {
+  padding: 10px;
+    background-color:#ffffff;
+    width: 40%;  
+    height: 100%; 
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 10px;
+  }
+  
+  .item {
+    background-color: #f2f2f2;
+    height: 200px;
+  }
+  
+  .item1 {
+    grid-column: span 2;
+    background: url(img/f39449d1914e2c17666648450d22d987.jpg);
+  }
+  
+  .item2 {
+    grid-row: span 2;
+    background: url(img/download\ \(10\).jpg);
+    
+  }
+  
+  .item3 {
+    grid-row: span 2;
+    background: url(img/images\ \(4\).jpg);
+  }
+  
+  .item4 {
+    grid-column: span 2;
+    background: url(img/download\ \(2\).jpeg);
+  }
+  
+  .item5 {
+    grid-column: span 2;
+    grid-row: span 2;
+    background: url(img/download\ \(2\).jpg);
+  }
+  
+  .item6 {
+    grid-row: span 2;
+    background: url(img/download\ \(10\).jpeg);
+  }
