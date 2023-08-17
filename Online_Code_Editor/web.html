@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="web.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="filenavbar.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav-logo"><a href="index.html">Connect</a></div>
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li><a class="navbar-link" onclick="onnavlink()" href="index.html">Home</a></li>
+          <li><a class="navbar-link" onclick="onnavlink()" href="mywork.html">My-Work</a></li>
+          <li><a class="navbar-link" onclick="onnavlink()" href="signup.html"><button class="signIn">SignIn/Register</button></a></li>
+          <li><button class="LogOut" onclick="logout() , onnavlink()">LogOut</button></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-nav">
+        <i name="open" class="ri-menu-line"></i>
+        <i name="close" class="ri-close-line"></i>
+    </div>
+    </header>
+
+    <section id="filenavbarweb">
+      <form>
+        <button type="button" class="open" id="openBtn">Open</button>
+        <button type="button" id="saveBtn" onclick="saveFiles()">Save</button>
+        <button type="button" id="uploadBtn" onclick="uploadFiles()">Upload</button>
+        <button type="button" id="downloadBtn">Download</button>
+        <button type="button" id="deleteBtn" onclick="deleteFile()">Delete</button>
+      </form>
+    </section>
+
+    <section class="weblangs-container">
+      <div class="web-container">
+        <div class="tab">
+          <button
+            class="tablinks"
+            onclick="openCity(event, 'html')"
+            id="defaultOpen"
+          >
+            HTML
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'css')">CSS</button>
+          <button class="tablinks" onclick="openCity(event, 'js')">JS</button>
+        </div>
+        <div class="web-editor">
+          <div id="html" class="tabcontent">
+            <input type="text" id="filename_html" name="filename_html" placeholder="Filename"></h1>
+            <textarea id="html-code" rows="35"></textarea>
+          </div>
+
+          <div id="css" class="tabcontent">
+            <input type="text" id="filename_css" name="filename_css" placeholder="Filename"></h1>
+            <textarea id="css-code" rows="30"></textarea>
+          </div>
+
+          <div id="js" class="tabcontent">
+            <input type="text" id="filename_js" name="filename_js" placeholder="Filename"></h1>
+            <textarea id="js-code" rows="30"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="web-result">
+        <h2>Output</h2>
+        <iframe id="output"></iframe>
+      </div>
+    </section>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-storage.js"></script>
+
+    <!-- Javascript file -->
+
+    <script src="signup.js"></script>
+    <script src="firebase.js"></script>
+    <script src="app.js"></script>
+    <script src="web.js"></script>
+    <script src="script.js"></script>
+    <script>
+//       function openFiles() {
+//   var user = firebase.auth().currentUser;
+  
+//   // Check if user is logged in
+//   if (!user) {
+//     alert('Please log in to open files.');
+//     return web.html;
+//   }
+  
+//   var userId = user.uid;
+//   var fileName = prompt("Enter file name:");
+  
+//   if (fileName !== null && fileName.trim() !== "") {
+//     const storageRef = firebase.storage().ref().child(userId).child(fileName);
+//     storageRef.getDownloadURL()
+//       .then(function(url) {
+//         return fetch(url);
+//       })
+//       .then(function(response) {
+//         if (response.ok) {
+//           return response.text();
+//         } else {
+//           throw new Error('Error loading file content');
+//         }
+//       })
+//       .then(function(text) {
+//         const extension = fileName.split('.').pop()?.toLowerCase() || '';
+//         const textareaId = getTextAreaId(extension);
+//         const textarea = document.getElementById(textareaId);
+//         if (textarea) {
+//           textarea.value = text;
+//         } else {
+//           console.log('Textarea not found.');
+//         }
+//       })
+//       .catch(function(error) {
+//         console.log(error);
+//         alert('Error opening file.');
+//       });
+//   } else {
+//     console.log('Invalid or empty file name.');
+//   }
+// }
+
+      </script>
+  </body>
+</html>
