@@ -1,0 +1,194 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #011925;
+    position: relative;
+}
+.weblangs-container{
+    width: 100%;
+    display: flex;  
+}
+.web-result{ 
+  margin-top: 2%;
+    width: 50%;
+  
+
+}
+.web-result #output{
+    margin: 0%;
+    width: 100%;
+    height: 600px;
+    background-color:white;    
+    color: #011925;
+    border: 2px solid lightgreen;
+ 
+}
+.web-container{
+  margin-top: 2%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.tab {
+  overflow: hidden;
+  border: 1px solid #ffff;
+  background-color: #a2eeb4;
+  color: #011925;
+  width: 100%;
+}
+.web-editor{
+    width: 100%;
+    height: 600px;
+}
+.web-editor textarea{
+    padding:2% 0 0 0;
+    width: 100%;
+    margin-top: 0%;
+    border: 2px solid lightgreen;
+    font-size: 20px;
+    background-color:white;
+    overflow: auto;    
+    color: #011925;
+    outline: none;
+    height: 520px;
+    resize: none;   
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #58f286;
+  color: #011925;
+}
+
+.tab button.active {
+  background-color: #fff;
+  color: #011925;
+}
+input{
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    border: 2px solid lightgreen;
+    background-color:white;
+    overflow: auto;    
+    color: #011925;
+    outline: none;
+    resize: none;
+}
+
+.web-result h2{
+  display: none;
+
+}
+.tabcontent{
+  width: 100%;
+  height: 100%;
+  overflow: none;
+}
+
+@media (max-width:600px) {
+
+  .weblangs-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;  
+}
+.web-result{ 
+  margin-top: 2%;
+    width: 100%;
+}
+.web-result #output{
+    margin: 0%;
+    width: 100%;
+    height: 600px;
+    background-color:white;    
+    color: #011925;
+    border: 2px solid lightgreen;
+ 
+}
+.web-result h2{
+  display: block;
+  background-color:#a2eeb4;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+}
+.web-container{
+  margin-top: 2%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.tab {
+  overflow: hidden;
+  border: 1px solid #ffff;
+  background-color: #a2eeb4;
+  color: #011925;
+  width: 100%;
+}
+.web-editor{
+    width: 100%;
+  
+}
+.web-editor textarea{
+    padding:2% 0 0 0;
+    width: 100%;
+    margin-top: 0%;
+    border: 2px solid lightgreen;
+    font-size: 20px;
+    background-color:white;
+    overflow: auto;    
+    color: #011925;
+    outline: none;
+    resize: none;    
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #58f286;
+  color: #011925;
+}
+
+.tab button.active {
+  background-color: #fff;
+  color: #011925;
+}
+input{
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    border: 2px solid lightgreen;
+    background-color:white;
+    overflow: auto;    
+    color: #011925;
+    outline: none;
+    resize: none;
+}
+
+  
+}

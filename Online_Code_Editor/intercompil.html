@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <!--  ===== CSS ===== -->
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="idestyle.css">
+  <link rel="stylesheet" href="filenavbar.css">
+</head>
+<body>
+  <header class="header">
+    <div class="nav-logo"><a href="index.html">Connect</a></div>
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li><a class="navbar-link" onclick="onnavlink()" href="index.html">Home</a></li>
+        <li><a class="navbar-link" onclick="onnavlink()" href="mywork.html">My-Work</a></li>
+        <li><a class="navbar-link" onclick="onnavlink()" href="signup.html"><button class="signIn">SignIn/Register</button></a></li>
+        <li><button class="LogOut" onclick="logout() , onnavlink()">LogOut</button></li>
+      </ul>
+    </nav>
+
+    <div class="mobile-nav">
+      <i name="open" class="ri-menu-line"></i>
+      <i name="close" class="ri-close-line"></i>
+  </div>
+  </header>
+
+  <section id="filenavbarweb">
+    <form>
+      <button id="openBtn" onclick="openFile();return false">Open</button>
+      <button type="button" id="saveBtn" onclick="saveFile()">Save</button>
+      <button type="button" id="uploadBtn" onclick="uploadFile()">Upload</button>
+      <button type="button" id="downloadBtn">Download</button>
+      <button type="button" id="deleteBtn" onclick="deleteFile()">Delete</button>
+    </form>
+  </section>
+  <section id="ide">
+    <div id="fileDialog" style="display:none">
+      <ul id="fileList"></ul>
+      <button id="cancelBtn">Cancel</button>
+    </div>
+    
+    <h4 id="lable">Filename<input type="text" id="filename" name="filename" placeholder="Enter Filename"></h4>
+    <textarea id="source"  rows="15" cols="500">
+#include <iostream>
+#include <string>
+        
+  int main()
+    {
+      std::string name;
+      std::cin >> name;
+        
+      std::cout << "Hi, Namaste " << name << "!\n";
+        
+      return 0;
+    } 
+</textarea>
+
+    <h4 id="lable">Language</h4>
+    <select id="lang">
+        <option>Bash</option>
+        <option>C#</option>
+        <option selected>C++</option>
+        <option>C</option>
+        <option>Java</option>
+        <option>Python</option>
+        <option>Ruby</option>
+        <option>Go</option>
+        <option>Rust</option>
+        <option>Swift</option>
+        <option>PHP</option>
+        <option>Kotlin</option>
+        <option>R (4.0.0)</option>
+        <option>Visual Basic.Net (vbnc 0.0.0.5943)</option>
+        <option>Perl (5.28.1)</option>
+      </select>
+
+    <h4 id="lable"  cols="500">Input</h4>
+    <textarea id="input"></textarea>
+
+    </br></br>
+    <button id="run" onclick="run()">Run (Ctrl + Enter)</button>
+
+    <h4 id="op">Output</h4>
+    <textarea readonly id="output"></textarea>
+
+   
+    </section>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-storage.js"></script>
+
+    <!-- Javascript file -->
+
+    <script src="signup.js"></script>
+    <script src="firebase.js"></script>
+    <script src="app.js"></script>
+    <script src="ide.js"></script>
+    <script src="script.js"></script>
+  
+</body>
+</html>

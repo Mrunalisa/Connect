@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in & Sign up Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <main>
+      <div class="box">
+        <div class="inner-box">
+          <div class="forms-wrap">
+            <form action="index.html" autocomplete="off" class="sign-in-form">
+              <div class="logo">
+                <h4>Connect</h4>
+              </div>
+
+              <div class="heading">
+                <h2>Welcome Back</h2>
+                <h6>Not registred yet?</h6>
+                <a href="#" class="toggle">Sign up</a>
+              </div>
+
+              <div class="actual-form">
+                <div class="input-wrap">
+                  <input
+                    type="email"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    id="email"
+                    required
+                  />
+                  <label>Email</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="password"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    id="password"
+                    required
+                  />
+                  <label>Password</label>
+                </div>
+
+                <input type="button" value="Sign In" class="sign-btn" onclick="login()"/>
+
+                <p class="text">
+                  Forgotten your password or you login datails?
+                  <a href="forget.html">Get help</a> signing in
+                </p>
+              </div>
+            </form>
+
+            <form autocomplete="off" class="sign-up-form">
+              <div class="logo">
+                <h4>connect</h4>
+              </div>
+
+              <div class="heading">
+                <h2>Get Started</h2>
+                <h6>Already have an account?</h6>
+                <a href="#" class="toggle">Sign in</a>
+              </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="email"
+                    class="input-field"
+                    autocomplete="off"
+                    id="email"
+                    required
+                  />
+                  <label>Email</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="password"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    id="password"
+                    required
+                  />
+                  <label>Password</label>
+                </div>
+
+                <button class="sign-btn" onclick="signUp()">Sign Up</button>
+
+                <p class="text">
+                  By signing up, I agree to the
+                  <a href="termsofservice.html">Terms of Services</a> and
+                  <a href="privacypolicy.html">Privacy Policy</a>
+                </p>
+              </div>
+            </form>
+          </div>
+
+          <div class="carousel">
+            <div class="images-wrapper">
+              <img src="img/sign1.jpg" class="image img-1 show" alt="" />
+              <img src="img/sign2.jpg" class="image img-2" alt="" />
+              <img src="img/sign3.jpg" class="image img-3" alt="" />
+            </div>
+
+            <div class="text-slider">
+              <div class="text-wrap">
+                <div class="text-group">
+                  <h2>Code anytime, anywhere</h2>
+                  <h2>Code your ideas into reality.</h2>
+                  <h2>Let's learn and create</h2>
+                </div>
+              </div>
+
+              <div class="bullets">
+                <span class="active" data-value="1"></span>
+                <span data-value="2"></span>
+                <span data-value="3"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-storage.js"></script>
+
+    <!-- Javascript file -->
+
+    <script src="signup.js"></script>
+    <script src="firebase.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= , initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    </head>
+    <body>
+      <header class="header">
+        <div class="nav-logo"><a href="index.html">Connect</a></div>
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li><a class="navbar-link" onclick="onnavlink()" href="index.html">Home</a></li>
+            <li><a class="navbar-link" onclick="onnavlink()" href="mywork.html">My-Work</a></li>
+            <li><a class="navbar-link" onclick="onnavlink()" href="signup.html"><button class="signIn">SignIn/Register</button></a></li>
+            <li><button class="LogOut" onclick="logout() , onnavlink()">LogOut</button></li>
+          </ul>
+        </nav>
+  
+        <div class="mobile-nav">
+          <i name="open" class="ri-menu-line"></i>
+          <i name="close" class="ri-close-line"></i>
+      </div>
+      </header>
+
+        <section class="hero">
+          <img src="img/background.gif" alt="bacgroud-img">
+          <div class="hero-info">
+            <h2><span>Code</span>, <span>Learn</span>, <span>Create</span>: Empowering education through an all-in-one online multi-language compiler, interpreter and editor.</h2>
+            <a href="web.html"><button class="hero-btn">Web Editor</button></a>
+            <a href="intercompil.html"><button class="hero-btn">Multi-Compiler</button></a>
+          </div>
+        </section>
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-storage.js"></script>
+
+    <!-- Javascript file -->
+
+    <script src="signup.js"></script>
+    <script src="firebase.js"></script>
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

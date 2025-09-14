@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #011925;
+}
+#ide{
+   width: 100%;
+    height: calc(100% - 100px);
+    margin-top: 1%;
+}
+#source{
+    font-size: 16px;
+    width: calc(50% - 8px);
+    height: 40%;
+    resize: none;
+    margin-left: 2em;
+    background-color:white;
+    color:#011925;
+}
+#lang{
+    margin-left:5%;
+    margin-top: 2%;
+    font-size: 16px;
+    margin-left: 2em; 
+    background-color:white;
+}
+#input{
+    font-size: 16px;
+    width: calc(50% - 8px); 
+    height: 8%; 
+    resize: none;
+    top: 50em;
+   margin-left: 2em;
+   background-color:white;
+   color:#011925;
+   margin-bottom: 0%;
+}
+#output{
+    font-size: 16px;
+    width: 40%; 
+    height: 70%; 
+    top: 30%; 
+    right: 0; 
+    margin-right: 2em;
+    resize: vertical;
+    background-color:white;
+    color:#011925;
+    position: fixed;
+}
+
+h4{
+    margin: 0.5%;
+    font-size: 16px;
+    margin-left: 2em;
+    color: lightgreen;
+    
+}
+#run{
+    margin-top: 0px;
+    font-size: 18px;
+    margin-left: 2em;
+    color: #1a4a52;
+    background-color: white;
+    border-radius: 10px;
+}
+#run:hover{
+    background-color: antiquewhite;
+}
+#filename{
+    margin-left: 1em;
+    margin-bottom: 1%;
+    background-color:white;
+    font-size: 16px;
+}
+#op{
+    display:none;
+}
+
+@media (max-width:600px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        height: 100%;
+    }
+    #ide{
+        width: 100%;
+        margin: 0%;
+     }
+     #source{
+        margin-left:5%;
+        margin-top: 2%;
+         font-size: 16px;
+         width: 90%;
+         height: 60%;
+         resize: none;
+         background-color:white;
+         color:#011925;
+     }
+     #lang{
+        margin-left:5%;
+        margin-top: 2%;
+         font-size: 16px; 
+         background-color:white;
+     }
+     #input{
+        margin-left:5%;
+        margin-top: 2%;
+         font-size: 16px;
+         width: 80%; 
+         height: 8%; 
+         resize: none;
+         top: 50em;
+        background-color:white;
+        color:#011925;
+        margin-bottom: 0%;
+     }
+     #output{
+        margin-top: 2%;
+         font-size: 18px;
+         width: 90%; 
+         height: 80%; 
+         top: 100%;
+         left: 5%; 
+         resize: none;
+         background-color:white;
+         color:#011925;
+         position: absolute;
+     }
+     
+     h4{
+        margin-left:2%;
+        margin-top: 2%;
+         margin: 0.5%;
+         font-size: 18px;
+         margin-left: 2em;
+         color: lightgreen;
+         
+     }
+     #filename{
+        margin-top: 5%;
+        margin-left:5%;
+        background-color:white;
+        font-size: 18px;
+    }
+    #lable{
+        margin-left:5%;
+        margin-top: 2%;
+        font-size: 18px;
+    }
+    #run{
+        margin-top: 0px;
+        font-size: 18px;
+        margin-left:5%;
+        color: #1a4a52;
+        background-color: white;
+        border-radius: 10px;
+    }
+    #run:hover{
+        background-color: antiquewhite;
+    }
+    #op{
+        margin-left: 5%;
+        margin-top: 10%;
+        display: block;
+        font-size:25px;
+    }
+     
+    
+}
